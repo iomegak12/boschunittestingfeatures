@@ -1,0 +1,29 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:30511",
+      "sslPort": 0
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "CRMSystemDBConnectionString": "ZGF0YSBzb3VyY2U9cmFtdGhpbmtwYWRcaW5zdGFuY2UyO3VzZXIgaWQ9c2E7cGFzc3dvcmQ9UHJlc3RpZ2U7aW5pdGlhbCBjYXRhbG9nPWJvc2NodHJhaW5pbmdkYjs=",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "CRMSystemServicesHosting": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000"
+    }
+  }
+}

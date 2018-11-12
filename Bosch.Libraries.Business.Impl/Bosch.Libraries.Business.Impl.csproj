@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bosch.Libraries.Business.Interfaces\Bosch.Libraries.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.Business.Validations.Interfaces\Bosch.Libraries.Business.Validations.Interfaces.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.DAL.Interfaces\Bosch.Libraries.DAL.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bosch.Libraries.Api.Impl\Bosch.Libraries.Api.Impl.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.Api.Interfaces\Bosch.Libraries.Api.Interfaces.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.Business.Impl\Bosch.Libraries.Business.Impl.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.Business.Interfaces\Bosch.Libraries.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.Business.Validations.Impl\Bosch.Libraries.Business.Validations.Impl.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.Business.Validations.Interfaces\Bosch.Libraries.Business.Validations.Interfaces.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.DAL.Impl\Bosch.Libraries.DAL.Impl.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.DAL.Interfaces\Bosch.Libraries.DAL.Interfaces.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.Models\Bosch.Libraries.Models.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.ORM.Impl\Bosch.Libraries.ORM.Impl.csproj" />
+    <ProjectReference Include="..\Bosch.Libraries.ORM.Interfaces\Bosch.Libraries.ORM.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
